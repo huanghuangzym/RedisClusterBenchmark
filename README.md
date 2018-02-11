@@ -18,6 +18,8 @@ Run
 ./main
 ```
 
+```shell
+
 Usage:
   redisbenchmark test [flags]
 
@@ -30,3 +32,5 @@ Flags:
   -n, --request int      number of requests (default 200)
   -s, --status string    [start|print] start test now! (required)
   -v, --verbose          verbose output
+
+```
