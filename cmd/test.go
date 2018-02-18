@@ -9,6 +9,7 @@ import (
 import "github.com/go-redis/redis"
 import "math/rand"
 import "time"
+import "strconv"
 
 var ip string
 var port string
@@ -21,11 +22,13 @@ var total int
 var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 func randSeq(n int) string {
+	seed := strconv.FormatInt((time.Now().Unix()), 10)
 	b := make([]rune, n)
 	for i := range b {
 		b[i] = letters[rand.Intn(len(letters))]
 	}
-	return string(b)
+	result := string(seed) + string(b)
+	return result
 }
 
 func NewClusterClient(ip string, k string, v string) {
@@ -34,6 +37,7 @@ func NewClusterClient(ip string, k string, v string) {
 		Password: "",
 	})
 	for i := 0; i < total; i++ {
+		k = randSeq(6)
 		if verbose == true {
                         fmt.Println("set key:", k, "| value:", v)
                 }
@@ -52,6 +56,7 @@ func NewClient(ip string, k string, v string) {
 	})
 
 	for i := 1; i < total; i++ {
+		k = randSeq(6)
 		if verbose == true {
 			fmt.Println("set key:", k, "| value:", v)
 		}
@@ -70,9 +75,9 @@ func MultiThreadBench(n int) {
 		chs[i] = make(chan int)
 		go func(ch chan int, i int) {
 			if cluster == true {
-			NewClusterClient(ip, randSeq(8), "xxx")
+			NewClusterClient(ip, randSeq(6), "xxx")
 			} else if cluster == false {
-			NewClient(ip, randSeq(8), "xxx")
+			NewClient(ip, randSeq(6), "xxx")
 			}
 			ch <- 1
 		}(chs[i], i)
