@@ -1,6 +1,6 @@
 # RedisClusterBenchmark
 
-## Installation
+## Guide
 
 Install
 ```shell
