@@ -8,9 +8,9 @@ build:
     - script:
         name: go get
         code: |
-          go get -u github.com/spf13/cobra/cobra
-          go get -u github.com/go-redis/redis
-          go get -u github.com/imzye/RedisClusterBenchmark
+          go get github.com/spf13/cobra/cobra
+          go get github.com/go-redis/redis
+          go get github.com/imzye/RedisClusterBenchmark
 
     - script:
         name: go build
