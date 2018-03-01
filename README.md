@@ -11,6 +11,7 @@ go get github.com/imzye/RedisClusterBenchmark
 
 Build
 ```shell
+cd $GOPATH/src/github.com/imzye/RedisClusterBenchmark
 go build redisbenchmark.go
 ```
 
