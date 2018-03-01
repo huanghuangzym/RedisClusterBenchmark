@@ -12,7 +12,7 @@ go get -u github.com/go-redis/redis
 
 Build
 ```shell
-go build main.go
+go build redisbenchmark.go
 ```
 
 Run
