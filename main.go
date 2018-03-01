@@ -1,7 +1,7 @@
 
 package main
 
-import "redisbenchmark/cmd"
+import "cmd"
 
 func main() {
 	cmd.Execute()
