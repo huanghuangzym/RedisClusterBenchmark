@@ -1,5 +1,7 @@
 # RedisClusterBenchmark
 
+[![wercker status](https://app.wercker.com/status/48d0ef59213a4e0901294db0857ee5ac/s/master "wercker status")](https://app.wercker.com/project/byKey/48d0ef59213a4e0901294db0857ee5ac)
+
 ## Guide
 
 Install
