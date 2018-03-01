@@ -1,16 +1,12 @@
 language: go
 go:
   - 1.8.x
-  - 1.9.x
-  - master
 
 dist: trusty
-
-go_import_path: redisbenchmark/cmd
 
 before_install:
   - go get -u github.com/spf13/cobra/cobra
   - go get -u github.com/go-redis/redis
 
-install:
+script:
   - go build main.go
