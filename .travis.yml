@@ -1,6 +1,7 @@
 language: go
 go:
-  - 1.8.x
+  - "1.8"
+  - master
 
 before_install:
   - go get -u github.com/spf13/cobra/cobra
