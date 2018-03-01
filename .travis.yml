@@ -4,8 +4,8 @@ go:
   - master
 
 before_install:
-  - go get -u github.com/spf13/cobra/cobra
-  - go get -u github.com/go-redis/redis
+  - go get -v github.com/spf13/cobra/cobra
+  - go get -v github.com/go-redis/redis
 
 script:
   - script: echo "ignore"
