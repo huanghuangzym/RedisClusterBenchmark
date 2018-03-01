@@ -14,5 +14,5 @@ build:
     - script:
         name: go build
         code: |
-          go build ./main.go
+          go build redisbenchmark.go
 
