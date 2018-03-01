@@ -18,7 +18,7 @@ go build redisbenchmark.go
 
 Run
 ```shell
-./main
+./redisbenchmark
 ```
 
 ```shell
