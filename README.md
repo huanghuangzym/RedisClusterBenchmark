@@ -2,20 +2,18 @@
 
 [![wercker status](https://app.wercker.com/status/48d0ef59213a4e0901294db0857ee5ac/s/master "wercker status")](https://app.wercker.com/project/byKey/48d0ef59213a4e0901294db0857ee5ac)
 
-## Guide
-
-Install
+## Install
 ```shell
 go get github.com/imzye/RedisClusterBenchmark
 ```
 
-Build
+## Build
 ```shell
 cd $GOPATH/src/github.com/imzye/RedisClusterBenchmark
 go build redisbenchmark.go
 ```
 
-Run
+## Run
 ```shell
 ./redisbenchmark
 ```
