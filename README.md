@@ -1,6 +1,7 @@
 # RedisClusterBenchmark
 
 [![wercker status](https://app.wercker.com/status/48d0ef59213a4e0901294db0857ee5ac/s/master "wercker status")](https://app.wercker.com/project/byKey/48d0ef59213a4e0901294db0857ee5ac)
+[![License](https://img.shields.io/badge/LICENSE-Apache2.0-ff69b4.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## Install
 ```shell
